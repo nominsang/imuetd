@@ -1,0 +1,39 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  creator: MyString
+  department: MyString
+  teacher: one
+  language: MyString
+  date_submitted: 2023-09-02 11:01:58
+  date_replied: 2023-09-02 11:01:58
+  format_extent_mime: MyString
+  format_extent_page: 1
+  type: 
+  rights_location: MyString
+  rights_security_classification: MyString
+  rights_access_rights: MyString
+  degree_category: MyString
+  degree_grantor: MyString
+  degree_descipline: MyString
+  degree_level: MyString
+
+two:
+  title: MyString
+  creator: MyString
+  department: MyString
+  teacher: two
+  language: MyString
+  date_submitted: 2023-09-02 11:01:58
+  date_replied: 2023-09-02 11:01:58
+  format_extent_mime: MyString
+  format_extent_page: 1
+  type: 
+  rights_location: MyString
+  rights_security_classification: MyString
+  rights_access_rights: MyString
+  degree_category: MyString
+  degree_grantor: MyString
+  degree_descipline: MyString
+  degree_level: MyString

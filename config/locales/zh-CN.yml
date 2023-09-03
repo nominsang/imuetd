@@ -1,0 +1,79 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   "true": "foo"
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+zh-CN:
+  layouts:
+    application: 
+      thesis: "博硕毕业论文"
+      subject: "专业"
+      year: "年度"
+      help: "帮助"
+  activerecord:
+    models:
+      admin_user: "管理员"
+      teacher: "指导教师"
+      item: "毕业论文"
+      abstract: "摘要"
+      keyword: "关键词"
+      alternative_title: "副题名"
+      toc: "目录"
+      reference: "参考文献"
+    attributes:
+      admin_user:
+        email: "电子邮箱"
+        created_at: "创建于"
+        updated_at: "更新于"
+        reset_password_token: "密码重置密钥"
+        reset_password_sent_at: "重置密码发送至"
+        remember_created_at: "记住密码始于"
+      teacher:
+        name: "姓名"
+        institution: "单位"
+        intro: "简介"
+      item:
+        title: "题目"
+        creator: "作者"
+        department: "院系"
+        teacher: "指导教师"
+        language: "正文语种"
+        date_submitted: "提交日期"
+        date_replied: "答辩日期"
+        format_extent_mime: "文献类型"
+        format_extent_page: "页数"
+        type: "文献类型"
+        rights_location: "文献馆藏地"
+        rights_security_classification: "论文保密级别"
+        rights_access_rights: "访问范围"
+        degree_category: "学位种类"
+        degree_grantor: "授予单位"
+        degree_descipline: "专业"
+        degree_level: "研究生层次"
+
