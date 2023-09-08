@@ -6,8 +6,8 @@ class CreateItems < ActiveRecord::Migration[7.0]
       t.string :department
       t.references :teacher, null: false, foreign_key: true
       t.string :language
-      t.datetime :date_submitted
-      t.datetime :date_replied
+      t.date :date_submitted
+      t.date :date_replied
       t.string :format_extent_mime
       t.integer :format_extent_page
       t.string :type

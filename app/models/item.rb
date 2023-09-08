@@ -1,4 +1,6 @@
 class Item < ApplicationRecord
+  after_initialize :set_default_value
+
   belongs_to :teacher
   has_many :abstracts
   has_many :keywords
@@ -9,4 +11,16 @@ class Item < ApplicationRecord
     ["abstracts", "keywords", "teacher"]
   end
 
+  protected
+  def set_default_value
+    self.degree_grantor ||= "内蒙古大学"
+    self.degree_level ||= "硕士"
+    self.degree_category ||= "学术学位"
+    self.language ||= "汉语"
+    self.format_extent_mime ||= "PDF"
+    self.rights_location ||= "内蒙古大学图书馆"
+    self.rights_access_rights ||= "仅限校园网"
+    self.date_replied ||= Date.today
+    self.date_submitted ||= Date.today
+  end
 end

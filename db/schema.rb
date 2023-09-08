@@ -61,8 +61,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_02_043807) do
     t.string "department"
     t.integer "teacher_id", null: false
     t.string "language"
-    t.datetime "date_submitted"
-    t.datetime "date_replied"
+    t.date "date_submitted"
+    t.date "date_replied"
     t.string "format_extent_mime"
     t.integer "format_extent_page"
     t.string "type"

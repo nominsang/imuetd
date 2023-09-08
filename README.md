@@ -1,5 +1,7 @@
 # 博硕论文管理系统
 
+本系统为博士、硕士毕业论文管理系统。
+
 git clone git@github.com:nominsang/imuetd.git
 cd imuetd
 bundle install
@@ -13,4 +15,4 @@ rails server
     User: admin@example.com
     Password: password
 
-哇！您已经登录到您的新 Active Admin 管理系统的首页了。
+哇！您已经登录到您的 IMUETD 管理系统的首页了。
