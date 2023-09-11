@@ -11,7 +11,7 @@ ActiveAdmin.register Item do
       f.input :language, :as => :select, :collection => ["汉语", "传统蒙古语", "基里尔蒙古语"]
       f.input :format_extent_mime, :hint => "PDF"
       f.input :format_extent_page
-      f.input :type
+      f.input :doc_type
       f.input :date_submitted
       f.input :date_replied
     end
@@ -35,7 +35,7 @@ ActiveAdmin.register Item do
   # Uncomment all parameters which should be permitted for assignment
   #
   permit_params :title, :creator, :department, :teacher_id, :language, :date_submitted, :date_replied, :format_extent_mime, :format_extent_page, 
-    :type, :rights_location, :rights_security_classification, :rights_access_rights, :degree_category, :degree_grantor, :degree_descipline,
+    :doc_type, :rights_location, :rights_security_classification, :rights_access_rights, :degree_category, :degree_grantor, :degree_descipline,
     :degree_level
   #
   # or

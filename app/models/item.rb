@@ -5,7 +5,7 @@ class Item < ApplicationRecord
   has_many :abstracts
   has_many :keywords
   def self.ransackable_attributes(auth_object = nil)
-    ["created_at", "creator", "date_replied", "date_submitted", "degree_category", "degree_descipline", "degree_grantor", "degree_level", "department", "format_extent_mime", "format_extent_page", "id", "language", "rights_access_rights", "rights_location", "rights_security_classification", "teacher_id", "title", "type", "updated_at"]
+    ["created_at", "creator", "date_replied", "date_submitted", "degree_category", "degree_descipline", "degree_grantor", "degree_level", "department", "format_extent_mime", "format_extent_page", "id", "language", "rights_access_rights", "rights_location", "rights_security_classification", "teacher_id", "title", "doc_type", "updated_at"]
   end
   def self.ransackable_associations(auth_object = nil)
     ["abstracts", "keywords", "teacher"]
@@ -22,5 +22,6 @@ class Item < ApplicationRecord
     self.rights_access_rights ||= "仅限校园网"
     self.date_replied ||= Date.today
     self.date_submitted ||= Date.today
+    self.doc_type ||= "学位论文"
   end
 end

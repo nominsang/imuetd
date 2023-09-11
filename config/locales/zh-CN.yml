@@ -37,7 +37,7 @@ zh-CN:
         date_replied: "答辩日期"
         format_extent_mime: "文献格式"
         format_extent_page: "页数"
-        type: "文献类型"
+        doc_type: "文献类型"
         rights_location: "文献馆藏地"
         rights_security_classification: "论文保密级别"
         rights_access_rights: "访问范围"

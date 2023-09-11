@@ -65,7 +65,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_02_043807) do
     t.date "date_replied"
     t.string "format_extent_mime"
     t.integer "format_extent_page"
-    t.string "type"
+    t.string "doc_type"
     t.string "rights_location"
     t.string "rights_security_classification"
     t.string "rights_access_rights"
